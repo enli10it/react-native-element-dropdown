@@ -260,7 +260,7 @@ const DropdownComponent: <T>(
                 animated: false,
               });
             }catch(e){
-              console.console.log('====================================');
+              console.log('====================================');
               console.log(e);
               console.log('====================================');
             }
