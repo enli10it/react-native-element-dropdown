@@ -254,10 +254,16 @@ const DropdownComponent: <T>(
               _.isEqual(defaultValue, _.get(e, valueField))
             );
             if (index > -1 && index <= listData.length - 1) {
+              try{
               refList?.current?.scrollToIndex({
                 index: index,
                 animated: false,
               });
+            }catch(e){
+              console.console.log('====================================');
+              console.log(e);
+              console.log('====================================');
+            }
             }
           }
         }, 200);
